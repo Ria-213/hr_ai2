@@ -247,25 +247,25 @@
             </div>
 
             <!-- Stylized CSS Map Area -->
-            <div class="relative w-full max-w-4xl mx-auto h-[400px] md:h-[500px] bg-gray-50 rounded-3xl border border-gray-100 overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="relative w-full max-w-5xl mx-auto aspect-[2/1] bg-gray-50 rounded-3xl border border-gray-100 overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
                 <!-- SVG World Map Background -->
-                <div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAwIDUwMCI+PHBhdGggZmlsbD0iIzExMSIgZD0iTTIyMCAyMDBsMTAgMTB2LTIwbC0xMCAxMHptNTAgNTBsMTAgMTB2LTIwbC0xMCAxMHptMTAwLTEwMGwxMCAxMHYtMjBsLTEwIDEwem0yMDAgNTBsMTAgMTB2LTIwbC0xMCAxMHptMjAwLTEwMGwxMCAxMHYtMjBsLTEwIDEwem01MCAyMDBsMTAgMTB2LTIwbC0xMCAxMHoiLz48L3N2Zz4='); background-size: cover; background-position: center;"></div>
+                <div class="absolute inset-0 opacity-30 bg-[url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg')] bg-no-repeat bg-center bg-contain"></div>
                 
                 <!-- Interactive Pins -->
                 <!-- North America -->
-                <div class="pin-pulse" style="top: 35%; left: 20%;">
+                <div class="pin-pulse" style="top: 30%; left: 22%;">
                     <div class="pin-tooltip">Webtoon / Poshmark</div>
                 </div>
                 <!-- Europe -->
-                <div class="pin-pulse" style="top: 30%; left: 48%;">
+                <div class="pin-pulse" style="top: 25%; left: 50%;">
                     <div class="pin-tooltip">Naver Labs Europe</div>
                 </div>
                 <!-- Asia (Korea/Japan) -->
-                <div class="pin-pulse" style="top: 40%; left: 78%;">
+                <div class="pin-pulse" style="top: 35%; left: 80%;">
                     <div class="pin-tooltip">LINE / Zepeto / SNOW</div>
                 </div>
                 <!-- Southeast Asia -->
-                <div class="pin-pulse" style="top: 55%; left: 75%;">
+                <div class="pin-pulse" style="top: 50%; left: 76%;">
                     <div class="pin-tooltip">Webtoon / LINE</div>
                 </div>
             </div>
@@ -277,54 +277,28 @@
         <!-- Canvas for Particles -->
         <canvas id="particles-canvas"></canvas>
         
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div data-aos="fade-right">
-                    <span class="text-naver font-bold tracking-wider text-sm uppercase">Technology & R&D</span>
-                    <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-6 tracking-tight leading-snug">기술로 그리는<br>새로운 내일</h2>
-                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                        초대규모 AI '하이퍼클로바X', 로봇 공학, 자율주행, 디지털 트윈까지. 네이버는 한계 없는 기술 투자를 통해 시공간을 연결하는 선행 기술을 연구합니다.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="glass-card p-4 rounded-xl">
-                            <i class="fas fa-brain text-naver text-xl mb-2"></i>
-                            <h4 class="font-bold text-sm">HyperCLOVA X</h4>
-                        </div>
-                        <div class="glass-card p-4 rounded-xl">
-                            <i class="fas fa-robot text-naver text-xl mb-2"></i>
-                            <h4 class="font-bold text-sm">Robotics</h4>
-                        </div>
-                        <div class="glass-card p-4 rounded-xl">
-                            <i class="fas fa-car text-naver text-xl mb-2"></i>
-                            <h4 class="font-bold text-sm">Autonomous</h4>
-                        </div>
-                        <div class="glass-card p-4 rounded-xl">
-                            <i class="fas fa-city text-naver text-xl mb-2"></i>
-                            <h4 class="font-bold text-sm">Digital Twin</h4>
-                        </div>
-                    </div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10" data-aos="fade-up">
+            <span class="text-naver font-bold tracking-wider text-sm uppercase">Technology & R&D</span>
+            <h2 class="text-3xl md:text-5xl font-bold mt-2 mb-6 tracking-tight leading-snug">기술로 그리는<br>새로운 내일</h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-12">
+                초대규모 AI '하이퍼클로바X', 로봇 공학, 자율주행, 디지털 트윈까지. 네이버는 한계 없는 기술 투자를 통해 시공간을 연결하는 선행 기술을 연구합니다.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="glass-card p-6 rounded-xl transform hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fas fa-brain text-naver text-3xl mb-4"></i>
+                    <h4 class="font-bold text-sm">HyperCLOVA X</h4>
                 </div>
-                <div class="relative" data-aos="fade-left">
-                    <!-- Code Snippet Mockup -->
-                    <div class="bg-[#1e1e1e] rounded-xl border border-gray-700 shadow-2xl p-6 font-mono text-sm overflow-hidden">
-                        <div class="flex space-x-2 mb-4">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        </div>
-                        <div class="text-gray-300">
-                            <p><span class="text-purple-400">import</span> naver.ai.hyperclova</p>
-                            <p class="mt-2"><span class="text-blue-400">class</span> <span class="text-yellow-200">Naver1784</span>:</p>
-                            <p class="pl-4 mt-1"><span class="text-blue-400">def</span> <span class="text-yellow-200">__init__</span>(self):</p>
-                            <p class="pl-8 mt-1">self.robotics = <span class="text-orange-300">True</span></p>
-                            <p class="pl-8 mt-1">self.digital_twin = <span class="text-orange-300">True</span></p>
-                            <p class="pl-4 mt-2"><span class="text-blue-400">def</span> <span class="text-yellow-200">connect_future</span>(self):</p>
-                            <p class="pl-8 mt-1"><span class="text-purple-400">return</span> <span class="text-green-300">"Endless Possibilities"</span></p>
-                            <p class="mt-4"><span class="text-gray-500"># Start the innovation loop</span></p>
-                            <p>model = naver.ai.hyperclova.load(<span class="text-green-300">'X'</span>)</p>
-                            <p class="mt-1 animate-pulse">_</p>
-                        </div>
-                    </div>
+                <div class="glass-card p-6 rounded-xl transform hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fas fa-robot text-naver text-3xl mb-4"></i>
+                    <h4 class="font-bold text-sm">Robotics</h4>
+                </div>
+                <div class="glass-card p-6 rounded-xl transform hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fas fa-car text-naver text-3xl mb-4"></i>
+                    <h4 class="font-bold text-sm">Autonomous</h4>
+                </div>
+                <div class="glass-card p-6 rounded-xl transform hover:-translate-y-2 transition-transform duration-300">
+                    <i class="fas fa-city text-naver text-3xl mb-4"></i>
+                    <h4 class="font-bold text-sm">Digital Twin</h4>
                 </div>
             </div>
         </div>
